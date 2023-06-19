@@ -1,5 +1,8 @@
-Create an AKS Cluster
+List Azure Resource Groups
+`az group list`
 
+Create an AKS Cluster
+```
 az aks create \
 --resource-group <Resource Group Name> \
 --name Cluster01 \
@@ -7,7 +10,7 @@ az aks create \
 --generate-ssh-keys \
 --node-vm-size Standard_B2s \
 --enable-managed-identity
-
+```
 --------------------
 
 Get AZ AKS credentials to run kubectl commands against your Cluster
